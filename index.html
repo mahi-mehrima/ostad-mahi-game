@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="bn">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"/>
+        <meta name="theme-color" content="#122a28"/>
+        <meta name="description" content="ওস্তাদ মাহি — A Bangla driving game by SK Abdur Rahman Mahi from Dark Studio."/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;500;600;700;800&amp;display=swap"/>
+
+        <link rel="icon" type="image/svg+xml" href="/dhaka-unlimited-logo.svg"/>
+        <link rel="preload" as="image" type="image/webp" href="/ostad-mahi-logo.webp"/>
+
+        <title>ওস্তাদ মাহি</title>
+
+        <style>
+            .preload-splash {
+                position: fixed;
+                inset: 0;
+                z-index: 9999;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 14px;
+                padding: 20px;
+                background: radial-gradient(ellipse at 50% 15%,#338d8d 0%,#1b3151 60%,#132136 100%);
+                color: #fff3c5;
+                font: 700 20px "Anek Bangla",sans-serif;
+                text-align: center;
+            }
+
+            .preload-splash img {
+                width: min(92vw,540px);
+                max-height: 46dvh;
+                height: auto;
+                object-fit: contain;
+                filter: drop-shadow(0 10px 15px #0008);
+            }
+
+            .preload-splash p {
+                margin: 0;
+            }
+
+            .preload-brand {
+                font: 900 clamp(42px,12vw,76px)/1.2 "Anek Bangla",sans-serif;
+                text-align: center;
+                color: #ffc824;
+                text-shadow: 3px 4px #9c182f, -2px -2px #fff;
+            }
+
+            .preload-credit {
+                margin-top: 12px;
+                font: 600 13px/1.6 "Anek Bangla",sans-serif;
+                color: #fff3c5;
+                overflow-wrap: anywhere;
+            }
+        </style>
+
+        <script type="module" crossorigin src="/assets/index-BlLZOiQS.js"></script>
+        <link rel="stylesheet" crossorigin href="/assets/index-DlHPbVy-.css">
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="preload-splash" role="status" aria-live="polite">
+                <img
+                    src="/ostad-mahi-logo.webp"
+                    alt="ওস্তাদ মাহি"
+                    width="500"
+                    height="282"
+                    fetchpriority="high"
+                    onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+                />
+
+                <strong class="preload-brand" style="display:none">
+                    ওস্তাদ মাহি
+                </strong>
+
+                <p>ইঞ্জিন চালু হচ্ছে…</p>
+
+                <div class="preload-credit">
+                    Made by SK Abdur Rahman Mahi · From Dark Studio
+                </div>
+            </div>
+        </div>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+
+        <script
+            type="module"
+            src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
+            integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw=="
+            data-cf-beacon='{"version":"2024.11.0","token":"9c5e8443d87f414c90ab42d3fbe1b133","r":1,"spa":2}'
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
